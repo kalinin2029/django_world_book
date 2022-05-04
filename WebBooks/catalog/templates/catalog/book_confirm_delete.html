@@ -1,0 +1,9 @@
+{% extends "bace_generic.html" %}
+{% block content %}
+<n1>Удаление книги</n1>
+<p>Вы точно хотите удалить эту книгу {{ book }} ?</p>
+<form action="" method="post">
+    {% csrf_token %}
+    <input type="submit" action="" value="Да удалить">
+</form>
+{% endblock %}
